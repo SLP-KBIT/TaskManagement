@@ -131,4 +131,5 @@ build/
 
 ## 
 .envrc
+.direnv/
 config/database.yml
