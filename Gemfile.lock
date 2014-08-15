@@ -48,6 +48,8 @@ GEM
     capistrano-rails (1.1.1)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-unicorn (0.1.10)
+      capistrano
     code_analyzer (0.4.5)
       sexp_processor
     coderay (1.1.0)
@@ -244,7 +246,10 @@ DEPENDENCIES
   annotate
   better_errors
   binding_of_caller
+  capistrano
+  capistrano-bundler
   capistrano-rails
+  capistrano-unicorn
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
