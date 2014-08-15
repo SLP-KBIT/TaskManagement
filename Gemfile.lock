@@ -31,12 +31,16 @@ GEM
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
     arel (5.0.1.20140414130214)
+    autoprefixer-rails (2.2.0.20140804)
+      execjs
     awesome_print (1.2.0)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.2.0.1)
+      sass (~> 3.2)
     builder (3.2.2)
     capistrano (3.2.1)
       i18n
@@ -48,8 +52,6 @@ GEM
     capistrano-rails (1.1.1)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
-    capistrano-unicorn (0.1.10)
-      capistrano
     code_analyzer (0.4.5)
       sexp_processor
     coderay (1.1.0)
@@ -244,12 +246,13 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  autoprefixer-rails
   better_errors
   binding_of_caller
+  bootstrap-sass
   capistrano
   capistrano-bundler
   capistrano-rails
-  capistrano-unicorn
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails

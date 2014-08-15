@@ -33,11 +33,10 @@ gem 'spring',        group: :development
 gem 'unicorn'
 
 # Use Capistrano for deployment
-group :development do 
+group :development do
   gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
-  gem 'capistrano-unicorn'
 end
 
 
@@ -56,3 +55,5 @@ group :development, :test do
 end
 
 gem 'slim'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'

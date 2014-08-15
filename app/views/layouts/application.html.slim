@@ -1,5 +1,5 @@
 doctype html
-html
+html lang="ja"
   head
     title
       | TaskManagement
@@ -7,4 +7,19 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    = yield
+    nav.navbar.navbar-default role="navigation"
+      .container-fluid
+        .navbar-header
+          a.navbar-brand href="/" TaskManagement
+        .wrap
+          ul.nav.navbar-nav
+            li.active
+              a href="#" link
+            li
+              a href="#" other
+            li
+              a href="#" others
+
+    .container
+
+      = yield
