@@ -1,0 +1,15 @@
+---
+:check_remove: []
+:check_add:
+- :coffeelint
+- :console_log
+- :debugger
+- :merge_conflict
+- :coffeelint
+- :migration
+- :coffeelint
+- :tabs
+- :coffeelint
+- :whitespace
+- :coffeelint
+- :yaml

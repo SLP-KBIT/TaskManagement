@@ -43,14 +43,17 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-group :development, :test do
+group :development do
   gem 'pry-rails'
   gem 'annotate'
   gem 'quiet_assets'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'rails_best_practices'
+  gem 'pre-commit'
+end
+
+group :development, :test do
   gem 'rspec-rails'
 end
 

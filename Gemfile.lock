@@ -90,7 +90,10 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
     pg (0.17.1)
+    pluginator (1.1.0)
     polyglot (0.3.5)
+    pre-commit (0.17.0)
+      pluginator (~> 1.1)
     pry (0.10.0)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -257,6 +260,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg
+  pre-commit
   pry-rails
   quiet_assets
   rails (= 4.1.0)
