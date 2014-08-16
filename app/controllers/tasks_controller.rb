@@ -3,6 +3,10 @@ class TasksController < ApplicationController
   def index
     @tasks = Task.all
   end
+
+  def show
+  end
+
   def new
     @task = Task.new
     @title = "作成"
@@ -17,7 +21,6 @@ class TasksController < ApplicationController
 
   def edit
     @title = "編集"
-    # render text: params and return
     render :_form
   end
 
@@ -34,9 +37,7 @@ class TasksController < ApplicationController
   private
 
   def find_task
-    # logger.debug "find_task called @@@"
     @task = Task.where(id: params[:id]).first if params[:id]
-    # logger.debug @task.inspect
   end
 
   def task_params

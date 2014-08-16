@@ -1,10 +1,21 @@
-h2 tasks#index
+.raw.task-global-operations
+  .col-xs-3
+    = link_to new_task_path, class: 'btn btn-sm btn-info' do
+      i.glyphicon.glyphicon-plus
+      span 新しいタスク
 
-= link_to "new", new_task_path
-
-ul
+table.table.table-condensed.table-striped.task-table
+  tr
+    td タスク名
+    td.operation 操作
   - @tasks.each do |task|
-    li
-      = link_to task.title, edit_task_path(task)
-      | &nbsp;&nbsp;&nbsp;
-      = link_to "削除", task, method: :delete
+    tr
+      td
+        = link_to task.title, task_path(task)
+      td
+        = link_to edit_task_path(task), class: 'btn btn-sm btn-info' do
+          i.glyphicon.glyphicon-pencil
+          span 編集
+        = link_to task, method: :delete, class: 'btn btn-sm btn-danger'
+          i.glyphicon.glyphicon-trash
+          span 削除

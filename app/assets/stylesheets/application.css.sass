@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets"
 @import "bootstrap"
 
+
+// navbar
 .wrap
   position: absolute
   left: 50%
@@ -11,3 +13,19 @@
   li
     a
       font-size: 13px
+
+// glyphiconとテキストを合わせた時の空白の調整
+i.glyphicon + span
+  margin-left: 4px
+
+.task-global-operations
+  div
+    margin-bottom: 3px
+    padding: 0
+
+table
+  td
+    &.operation
+      width: 150px
+    .btn + .btn
+      margin-left: 3px
