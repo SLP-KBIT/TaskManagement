@@ -2,7 +2,15 @@ h2
   = @task.title
 
 .panel.panel-default
-  .panel-heading
+  .panel-heading#taskHeader
     | author:
+    span.operations
+      = link_to @task, method: :delete, class: 'btn btn-xs btn-danger pull-right' do
+        i.glyphicon.glyphicon-trash
+        span 削除
+      = link_to edit_task_path(@task), class: 'btn btn-xs btn-info pull-right' do
+        i.glyphicon.glyphicon-pencil
+        span 編集
+
   .panel-body
     = @task.detail

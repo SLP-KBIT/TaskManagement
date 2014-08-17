@@ -7,15 +7,6 @@
 table.table.table-condensed.table-striped.task-table
   tr
     td タスク名
-    td.operation 操作
   - @tasks.each do |task|
     tr
-      td
-        = link_to task.title, task_path(task)
-      td
-        = link_to edit_task_path(task), class: 'btn btn-sm btn-info' do
-          i.glyphicon.glyphicon-pencil
-          span 編集
-        = link_to task, method: :delete, class: 'btn btn-sm btn-danger'
-          i.glyphicon.glyphicon-trash
-          span 削除
+      td = link_to task.title, task
