@@ -1,10 +1,6 @@
-h2 タスクの#{@title}
-
-= form_for @task, class: 'form' do |f|
-  .form-group
-    = f.label :title, "タイトル"
-    = f.text_field :title, class: 'form-control'
-  .form-group
-    = f.label :detail, "詳細"
-    = f.text_field :detail, class: 'form-control'
-  = f.submit @title, class: 'btn btn-sm btn-info'
+.form-group
+  = f.label :title, "タイトル"
+  = f.text_field :title, class: 'form-control'
+.form-group
+  = f.label :detail, "詳細"
+  = f.text_field :detail, class: 'form-control'

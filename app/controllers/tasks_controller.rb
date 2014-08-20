@@ -9,8 +9,6 @@ class TasksController < ApplicationController
 
   def new
     @task = Task.new
-    @title = "作成"
-    render :_form
   end
 
   def create
@@ -20,8 +18,6 @@ class TasksController < ApplicationController
   end
 
   def edit
-    @title = "更新"
-    render :_form
   end
 
   def update

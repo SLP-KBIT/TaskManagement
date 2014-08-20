@@ -1,0 +1,5 @@
+h2 タスクの更新
+
+= form_for @task, class: 'form' do |f|
+  = render"form", f: f
+  = f.submit "更新", class: "btn btn-sm btn-info"
