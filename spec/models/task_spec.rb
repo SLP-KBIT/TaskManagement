@@ -7,6 +7,7 @@
 #  detail     :text
 #  created_at :datetime
 #  updated_at :datetime
+#  finished   :boolean          default(FALSE)
 #
 
 require 'rails_helper'

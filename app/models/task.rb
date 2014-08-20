@@ -7,6 +7,7 @@
 #  detail     :text
 #  created_at :datetime
 #  updated_at :datetime
+#  finished   :boolean          default(FALSE)
 #
 
 class Task < ActiveRecord::Base
