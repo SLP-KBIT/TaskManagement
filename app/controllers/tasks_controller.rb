@@ -20,7 +20,7 @@ class TasksController < ApplicationController
   end
 
   def edit
-    @title = "編集"
+    @title = "更新"
     render :_form
   end
 
