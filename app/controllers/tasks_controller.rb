@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   before_action :find_task
   def index
-    @tasks = Task.all
+    @tasks = Task.unfinished
   end
 
   def show
@@ -37,7 +37,7 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(%i(title detail))
+    params.require(:task).permit(%i(title detail finished))
   end
 
 end

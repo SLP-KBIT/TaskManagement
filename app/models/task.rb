@@ -11,4 +11,6 @@
 #
 
 class Task < ActiveRecord::Base
+  default_scope { order(:id) }
+  scope :unfinished, -> { where(finished: false) }
 end
