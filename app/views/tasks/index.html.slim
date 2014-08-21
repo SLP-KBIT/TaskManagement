@@ -1,12 +1,18 @@
 .raw.task-global-operations
-  .col-xs-3
-    = link_to new_task_path, class: 'btn btn-sm btn-info' do
-      i.glyphicon.glyphicon-plus
-      span 新しいタスク
-
+  .col-xs-6
+    .raw
+      = link_to new_task_path, class: 'btn btn-sm btn-info' do
+        i.glyphicon.glyphicon-plus
+        span 新しいタスク
+      = render partial: 'status_button_group'
 table.table.table-condensed.table-striped.task-table
   tr
     td タスク名
   - @tasks.each do |task|
     tr
       td = link_to task.title, task
+
+javascript:
+  path = "#{request.path_info}"
+coffee:
+  console.log $('#taskStatus .btn[href="' + path + '"]').addClass('active')

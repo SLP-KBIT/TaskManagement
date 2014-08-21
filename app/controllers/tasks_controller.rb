@@ -30,6 +30,12 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
+  def finished
+    @tasks = Task.finished
+    render :index
+  end
+
+
   private
 
   def find_task
