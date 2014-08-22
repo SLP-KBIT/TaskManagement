@@ -11,7 +11,17 @@
 #
 
 require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe Task, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before do
+    FactoryGirl.create(:feature_task)
+    FactoryGirl.create(:finished_task)
+  end
+  describe '.finished' do
+    it { expect(Task.finished.pluck(:finished).uniq).to eq([true]) }
+  end
+  describe '.unfinished' do
+    it { expect(Task.unfinished.pluck(:finished).uniq).to eq([false]) }
+  end
 end

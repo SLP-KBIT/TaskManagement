@@ -51,6 +51,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'rails_best_practices'
   gem 'pre-commit'
+  gem 'guard-rspec', require: false
 end
 
 group :development, :test do
