@@ -9,7 +9,6 @@
 #  updated_at :datetime
 #  finished   :boolean          default(FALSE)
 #
-
 require 'rails_helper'
 require 'spec_helper'
 
