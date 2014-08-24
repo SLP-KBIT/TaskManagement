@@ -13,4 +13,4 @@ h2
         span 編集
 
   .panel-body
-    = @task.detail
+    = raw @task.detail.gsub("\n", "<br>")
