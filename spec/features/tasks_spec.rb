@@ -53,6 +53,15 @@ RSpec.describe 'Task', type: :feature, js: true do
     expect(find('.panel-body')).to have_content(detail)
   end
 
+  scenario 'タスクの削除' do
+    visit tasks_path
+    click_on @feature.title
+
+    expect {
+      click_on '削除'
+    }.to change(Task, :count).by(-1)
+  end
+
   def expect_on_index_page
     expect(page).to have_content '新しいタスク'
     expect(page).to have_content 'タスク名'
