@@ -2,7 +2,7 @@ require 'faker'
 
 FactoryGirl.define do
   factory :feature_task, class: Task do
-    title { Faker::Lorem.sentence }
+    title { Faker::Lorem.paragraph }
     detail { Faker::Lorem.paragraph }
   end
 end
@@ -10,7 +10,7 @@ end
 
 FactoryGirl.define do
   factory :finished_task, class: Task do
-    title { Faker::Lorem.sentence }
+    title { Faker::Lorem.paragraph }
     detail { Faker::Lorem.paragraph }
     finished true
   end

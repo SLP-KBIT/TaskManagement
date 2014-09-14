@@ -63,6 +63,7 @@ group :test do
   gem 'faker'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'poltergeist'
 end
 
 gem 'slim'
